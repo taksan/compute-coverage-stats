@@ -7,7 +7,6 @@ inputs:
 outputs:
   coverage:
     description: 'coverage stats'
-    required: true
 
   coverage-color:
     description: 'coverage color'
