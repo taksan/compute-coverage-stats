@@ -13,4 +13,4 @@ echo | awk "{
 }
 "
 )
-echo "::set-output name=coverageColor::${COLOR}"
+echo "::set-output name=coverage-color::${COLOR}"
