@@ -1,4 +1,4 @@
-#!/bin/sh -leu
+#!/bin/sh -le
 
 FILE="$1"
 
