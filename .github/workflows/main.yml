@@ -8,6 +8,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+      - run: sudo apt install -y lcov
       - name: run test
         run: |
           cd test
