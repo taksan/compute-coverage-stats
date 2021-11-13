@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/bin/sh -l
 
 FILE="$1"
+
+ls -l
 
 COVERAGE=$(lcov --summary "$FILE" |grep --color=none lines| sed 's/.*: \([^%]*\)%.*/\1/')
 echo "::set-output name=coverage::${COVERAGE}"

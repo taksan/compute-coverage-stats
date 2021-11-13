@@ -1,17 +1,18 @@
 name: 'Compute coverage stats'
 description: 'Compute coverage stats based on lcov file'
 inputs:
-  coverageFile:
+  coverage-file:
     description: 'token to write to the gist'
     required: true
 outputs:
   coverage:
     description: 'coverage stats'
     required: true
-  coverageFile:
-    description: 'coverage file path'
+
+  coverage-color:
+    description: 'coverage color'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.coverageFile }}
+    - ${{ inputs.coverage-file }}
